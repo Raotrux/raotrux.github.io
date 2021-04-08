@@ -1,51 +1,77 @@
 <!DOCTYPE html>
+<head>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .row {
+          display: flex;
+        }
+        
+        /* Create two equal columns that sits next to each other */
+        .column {
+          flex: 50%;
+          padding: 10px;
+          height: 300px; /* Should be removed. Only for demonstration */
+        }
+    </style>
+</head>
 <html>
-<body>
-# Web:
-    - HTML
-    - CSS
-    - JS
+    <body>
+        <div class="row">
+            
+                <h2>Web:</h2>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JS</p>
+            
+                <h2>Mobile:</h2>
+                    <p>Java</p>
+                    <p>Kotlin</p>
+                    <p>React Native</p>
+                    <p>Xamarin</p>
 
-<h2>Mobile:</h2>
-    <p>Java</p>
-    <p>Kotlin</p>
-    <p>React Native</p>
-    <p>Xamarin</p>
+                <h2>IDEs:</h2>
+                    <p>Netbeans</p>
+                    <p>Visual Studio Code</p>
+                    <p>Visual Studio 2019</p>
+                    <p>BlueJ</p>
+                    <p>Android Studio</p>
+                    <p>Jupyter Notebook</p>
+                    <p>Notepad++</p>
+            </div>
 
-<h2>Cloud:</h2>
-    <p>Azure .NET</p>
-    <p>Amazon Web Services</p>
-    <p>Google Cloud Platform</p>
-    <p>GitHub Actions</p>
-    <p>Serverless Functions</p>
-    <p>Serverless Load Testing</p>
+            <div class="column">
+                <h2>Cloud:</h2>
+                    <p>Azure .NET</p>
+                    <p>Amazon Web Services</p>
+                    <p>Google Cloud Platform</p>
+                    <p>GitHub Actions</p>
+                    <p>Serverless Functions</p>
+                    <p>Serverless Load Testing</p>
 
-<h2>Database:</h2>
-    <p>MySQL</p>
-    <p>MSSQL</p>
-    <p>NoSQL</p>
-    <p>Excel</p>
+                <h2>Database:</h2>
+                    <p>MySQL</p>
+                    <p>MSSQL</p>
+                    <p>NoSQL</p>
+                    <p>Excel</p>
 
-<h2>Data Science Packages:</h2>
-    <p>Pandas</p>
-    <p>Numpy</p>
-    <p>Seaborn</p>
-    <p>SciPy</p>
-    <p>MatPlotLib</p>
+                <h2>Data Science Packages:</h2>
+                    <p>Pandas</p>
+                    <p>Numpy</p>
+                    <p>Seaborn</p>
+                    <p>SciPy</p>
+                    <p>MatPlotLib</p>
+            </div>
+        </div>
 
-<h2>IDEs:</h2>
-    <p>Netbeans</p>
-    <p>Visual Studio Code</p>
-    <p>Visual Studio 2019</p>
-    <p>BlueJ</p>
-    <p>Android Studio</p>
-    <p>Jupyter Notebook</p>
-    <p>Notepad++</p>
-
-<h2>Personal Projects:</h2>
-    <p>Mars Society Mobile App (in development)</p>
-    <p>Dex (not complete)</p>
-    <p>Mob (in development)</p>
-    <p>Serverless Artillery Load Tester (completed under guidance of Nordstrom employees)</p>
-</body>
+        <div class="row">
+            <h2>Personal Projects:</h2>
+                <p>Mars Society Mobile App (in development)</p>
+                <p>Dex (not complete)</p>
+                <p>Mob (in development)</p>
+                <p>Serverless Artillery Load Tester (completed under guidance of Nordstrom employees)</p>
+        </div>
+    </body>
 </html>
