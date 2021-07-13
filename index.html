@@ -153,6 +153,28 @@
         height: 0%
       }
     }
+
+    /* Loaded */
+    .loaded #loader-wrapper .loader-inner {
+      -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: translateX(100%);  /* IE 9 */
+      transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    .loaded #loader-wrapper {
+      -webkit-transform: translateY(-100%);
+          -ms-transform: translateY(-100%);
+              transform: translateY(-100%);
+
+      -webkit-transition: all 0.3s 0.6s ease-out;
+              transition: all 0.3s 0.6s ease-out;
+    }
+
+    .loaded #loader {
+      opacity: 0;
+      -webkit-transition: all 0.3s ease-out;
+              transition: all 0.3s ease-out;
+    }
     
     /* ------------------------------- END ANIMATION STUFF ------------------------------- */
     
@@ -176,8 +198,8 @@
 
 <body>
 <!-- Loading Page -->
-<div class="loader-wrapper">
-  <div class="loader"><div class="loader-inner"></div></div>
+<div id="loader-wrapper">
+  <div id="loader"><div class="loader-inner"></div></div>
 </div>
 
 <!-- Navbar (sit on top) -->
