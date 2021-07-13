@@ -43,12 +43,42 @@ html {
 }
 
 /* The element to apply the animation to */
-animate {
+.animate {
   width: 100px;
   height: 100px;
   background-color: red;
   animation-name: example;
   animation-duration: 4s;
+}
+
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
 
 .header-color{color:#fff!important;background-color:#3a4750!important}
@@ -92,7 +122,11 @@ animate {
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-right w3-text-white" style="padding:48px">
-    <animate class="w3-jumbo w3-hide-small">Andrew Boyer</animate><br>
+    <div class="wrapper w3-jumbo">
+      <div class="typing-demo">
+        This is a typing demo.
+      </div>
+  </div>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">Andrew Boyer</span><br>
     <p><a href="#about" class="w3-button header-color hover w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">About me</a></p>
   </div> 
