@@ -61,7 +61,7 @@ html {
 
 .typing-demo {
   width: 12ch;
-  animation: typing 2s steps(12), blink .5s step-end 3s alternate;
+  animation: typing 2s steps(12), glow 1s step-end 3s alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
@@ -75,9 +75,12 @@ html {
   }
 }
     
-@keyframes blink {
-  50% {
-    border-color: transparent
+@keyframes glow {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #d2d8ea;
   }
 }
 
