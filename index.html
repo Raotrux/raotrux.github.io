@@ -61,7 +61,7 @@ html {
 
 .typing-demo {
   width: 12ch;
-  animation: typing 2s steps(12), glow 2s step-end forwards infinite alternate;
+  animation: typing 2s steps(12), glow 2s ease-in-out forwards infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   font-family: monospace;
@@ -78,11 +78,8 @@ html {
   0% {
     color: white;
   }
-  50% {
-    color: yellow;
-  }
   100% {
-    color: #d2d8ea;
+    color: #5b9194;
   }
 }
 
