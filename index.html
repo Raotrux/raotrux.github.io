@@ -130,9 +130,8 @@
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-right w3-text-white" style="padding:48px">
-    <div class="typing-demo w3-jumbo">
-        Andrew Boyer
-    </div>
+    <span class="w3-jumbo w3-hide-small hidden animate__animated animate__jackInTheBox animate__delay-1s">Andrew Boyer</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium hidden animate__animated animate__jackInTheBox animate__delay-1s">Andrew Boyer</span><br>
   </div>
   <div class="w3-display-right w3-text-white" style="padding:48px">
     <p><a href="#about" class="w3-button header-color hover w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">About me</a></p>
@@ -155,23 +154,23 @@
   </div>
   <h2 class="w3-center hidden">ANDREW BOYER</h2>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter hidden animate__animated animate__bounce">
+    <div class="w3-quarter hidden animate__animated animate__jackInTheBox animate__delay-1s">
       <i class="fa fa-wrench w3-margin-bottom w3-jumbo w3-center"></i>
       <p class="w3-large">U.S. Air Force Veteran</p>
       <p>Spent 6 years as an Aircraft Hydraulics Systems Technician working on hydraulic componenents for the B-52 Stratofortress, B-1 Lancer and B-2 Spirit nuclear bombers.</p>
     </div>
-    <div class="w3-quarter hidden animate__animated animate__pulse">
+    <div class="w3-quarter hidden animate__animated animate__jackInTheBox animate__delay-1s">
       <i class="fa fa-rocket w3-margin-bottom w3-jumbo"></i>
       <p class="w3-large">Space Enthusiast</p>
       <p>Fascination with space and the mysteries that await for us there. I grew up with looking through a telescope, piloting some spacecraft in a game, or watching rocket launches like Falcon 9 and Starship. I would love to be on board on of those rockets one day and see Earth in a way that so little people have. </p>
     </div>
-    <div class="w3-quarter hidden animate__animated animate__jackInTheBox animate__repeat-3">
+    <div class="w3-quarter hidden animate__animated animate__jackInTheBox animate__delay-1s">
       <i class="fa fa-desktop w3-margin-bottom w3-jumbo"></i>
       <p class="w3-large">Coder</p>
       <p>Mobile and web application development, serverless testing utilizing Amazon Web Services and Nordstrom’s serverless artillery project, built/compiled/fitted models for machine learning, and created and managed SQL databases.
       </p>
     </div>
-    <div class="w3-quarter hidden animate__animated animate__jackInTheBox animate__delay-3s">
+    <div class="w3-quarter hidden animate__animated animate__jackInTheBox animate__delay-1s">
       <i class="fa fa-camera w3-margin-bottom w3-jumbo"></i>
       <p class="w3-large">Wildlife Photographer</p>
       <p>I love the outdoors and wildlife photography gives me a purpose to go out there and explore everything nature has to offer. My goal with photography is to get ultra-high quality photos of as many species as possible in their natural world and use those images to populate a project of mine: www.pnwwildlife.com.</p>
@@ -299,6 +298,8 @@
         }
       }
     }
+
+    
 
     window.addEventListener('scroll', checkPosition);
     window.addEventListener('resize', init);
