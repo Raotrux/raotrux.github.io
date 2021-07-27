@@ -23,14 +23,6 @@
       line-height: 1.8;
     }
     
-    /* Full height image header */
-    .bgimg-1 {
-      background-position: center;
-      background-size: cover;
-      background-image: url("/images/background.jpg");
-      min-height: 100%;
-    }
-    
     .w3-bar .w3-button {
       padding: 16px;
     }
@@ -101,6 +93,36 @@
     }
 
     /* ------------------------------- END ANIMATION STUFF ------------------------------- */
+
+    /* ------------------------------- I really need to move this to it's own file.. such a mess.. ------------------------------- */
+
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+  
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("/images/background.jpg");
+      min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+      background-image: url("/images/favs/treeswallows.jpg");
+      min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+      background-image: url("/images/favs/gullscormarants.jpg");
+      min-height: 400px;
+    }
     
     .header-color{color:#fff!important;background-color:#3a4750!important}
     .dark-page-color{color:#fff!important;background-color:#5b9194!important}
@@ -240,6 +262,10 @@
       </p>
     </div>
   </div>
+</div>
+
+<!-- Second Parallax Image -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
 </div>
 
 <!-- Skills section -->
@@ -468,9 +494,11 @@
       <figcaption class="w3-center">Serverless Artillery - Cloud</figcaption>
       <p>A project utilizing Nordstrom's Serverless Artillery and Microsoft's Azure. Work was completed in teams with sprints occuring every 2 weeks under the supervision of our college instructor and 2 Nordstrom employees. View the code at: https://github.com/North-Seattle-College/ad440-winter2021-tuesday-repo</p>
     </div>
-
-    
   </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
 </div>
 
 <!-- Photography Section -->
