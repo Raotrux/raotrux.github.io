@@ -183,13 +183,28 @@
       #preloader .load :last-child {
           background: #937666;
       }
+      @keyframes a {
+        0%,
+        to {
+            transform: translate(0);
+        }
+        25% {
+            transform: translate(160%);
+        }
+        50% {
+            transform: translate(160%, 160%);
+        }
+        75% {
+            transform: translateY(160%);
+        }
+      }
     </style>
   </head>
 
 <body>
 <!-- Loading Page -->
-<div id="preloader1">
-  <div class="load1">
+<div id="preloader">
+  <div class="load">
     <hr />
     <hr />
     <hr />
