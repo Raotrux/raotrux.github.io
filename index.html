@@ -9,138 +9,192 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
-  
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Righteous", sans-serif}
     
-    body {
-      height: 100%;
-      line-height: 1.8;
-      background-color: gray;
-    }
-    
-    html {
-      height: 100%;
-      line-height: 1.8;
-    }
-    
-    .w3-bar .w3-button {
-      padding: 16px;
-    }
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Righteous", sans-serif}
+      
+      body {
+        height: 100%;
+        line-height: 1.8;
+        background-color: gray;
+      }
+      
+      html {
+        height: 100%;
+        line-height: 1.8;
+      }
+      
+      .w3-bar .w3-button {
+        padding: 16px;
+      }
 
-    .mypadding {
-      padding: 16px;
-    }
+      .mypadding {
+        padding: 16px;
+      }
 
-    .mycenter {
-      text-align: center;
-    }
+      .mycenter {
+        text-align: center;
+      }
 
-    .checked {
-      color: orange;
-    }
+      .checked {
+        color: orange;
+      }
 
-    .unchecked {
-      color: darkgray;
-    }
+      .unchecked {
+        color: darkgray;
+      }
+      
+      
+      /* ------------------------------- ANIMATION STUFF ------------------------------- */
+      .wrapper {
+        height: 100vh;
+        /*This part is important for centering*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .typing-demo {
+        width: 12ch;
+        animation: typing 1.5s steps(12), glow 10s ease-in-out forwards infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: monospace;
+        font-size: 2em;
+      }
+      
+      @keyframes typing {
+        from {
+          width: 0
+        }
+      }
+          
+      @keyframes glow {
+        0% {
+          color: white;
+        }
+        50% {
+          color: pink;
+        }
+        100% {
+          color: white;
+        }
+      }
+
+      @keyframes fade-in {
+      from {opacity: 0; transform: scale(.7,.7)}
+      to {opacity: 1;}
+      }
+      .fade-in-element {
+        animation: fade-in 1.4s;
+      }
+
+      .hidden {
+        opacity: 0;
+      }
+
+      /* ------------------------------- END ANIMATION STUFF ------------------------------- */
+
     
+
+      /* ------------------------------- I really need to move this to it's own file.. such a mess.. ------------------------------- */
+
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
     
-    /* ------------------------------- ANIMATION STUFF ------------------------------- */
-    .wrapper {
-      height: 100vh;
-      /*This part is important for centering*/
-      display: flex;
+      /* Full height image header */
+      .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("/images/background.jpg");
+        min-height: 100%;
+      }
+
+      /* Second image (Portfolio) */
+      .bgimg-2 {
+        background-image: url("/images/favs/treeswallows.jpg");
+        min-height: 400px;
+      }
+
+      /* Third image (Contact) */
+      .bgimg-3 {
+        background-image: url("/images/favs/baldeagle.jpg");
+        min-height: 400px;
+      }
+
+      
+      
+      .header-color{color:#fff!important;background-color:#3a4750!important}
+      .dark-page-color{color:#fff!important;background-color:#5b9194!important}
+      .light-page-color{color:#fff!important;background-color:#93b6b8!important}
+      .image-center {max-width:100%;height:auto;text-align:center;border-radius:8px;}
+      .add-rounded-edge {border-radius:8px;}
+      .hover:hover{color:#000!important;background-color:#718898!important}  
+
+      /* Loader page stuff. */
+      #preloader {
+      -ms-flex-align: center;
       align-items: center;
+      background: #3d3a4b;
+      display: -ms-flexbox;
+      display: flex;
+      height: 100%;
+      -ms-flex-pack: center;
       justify-content: center;
-    }
-    
-    .typing-demo {
-      width: 12ch;
-      animation: typing 1.5s steps(12), glow 10s ease-in-out forwards infinite alternate;
-      white-space: nowrap;
-      overflow: hidden;
-      font-family: monospace;
-      font-size: 2em;
-    }
-    
-    @keyframes typing {
-      from {
-        width: 0
+      left: 0;
+      margin: 0.5rem;
+      padding: 0.5rem;
+      position: absolute;
+      right: 0;
+      z-index: 999;
       }
-    }
-        
-    @keyframes glow {
-      0% {
-        color: white;
+      #preloader .load {
+          height: 6rem;
+          left: 50%;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 6rem;
       }
-      50% {
-        color: pink;
+      #preloader .load hr {
+          animation: a 2s ease infinite;
+          border: 0;
+          height: 40%;
+          margin: 0;
+          position: absolute;
+          width: 40%;
       }
-      100% {
-        color: white;
+      #preloader .load :first-child {
+          animation-delay: -1.5s;
+          background: #e3dfff;
       }
-    }
-
-    @keyframes fade-in {
-    from {opacity: 0; transform: scale(.7,.7)}
-    to {opacity: 1;}
-    }
-    .fade-in-element {
-      animation: fade-in 1.4s;
-    }
-
-    .hidden {
-      opacity: 0;
-    }
-
-    /* ------------------------------- END ANIMATION STUFF ------------------------------- */
-
-   
-
-    /* ------------------------------- I really need to move this to it's own file.. such a mess.. ------------------------------- */
-
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-  
-    /* Full height image header */
-    .bgimg-1 {
-      background-position: center;
-      background-size: cover;
-      background-image: url("/images/background.jpg");
-      min-height: 100%;
-    }
-
-    /* Second image (Portfolio) */
-    .bgimg-2 {
-      background-image: url("/images/favs/treeswallows.jpg");
-      min-height: 400px;
-    }
-
-    /* Third image (Contact) */
-    .bgimg-3 {
-      background-image: url("/images/favs/baldeagle.jpg");
-      min-height: 400px;
-    }
-
-    
-    
-    .header-color{color:#fff!important;background-color:#3a4750!important}
-    .dark-page-color{color:#fff!important;background-color:#5b9194!important}
-    .light-page-color{color:#fff!important;background-color:#93b6b8!important}
-    .image-center {max-width:100%;height:auto;text-align:center;border-radius:8px;}
-    .add-rounded-edge {border-radius:8px;}
-    .hover:hover{color:#000!important;background-color:#718898!important}  
+      #preloader .load :nth-child(2) {
+          animation-delay: -1s;
+          background: #d3c0cd;
+      }
+      #preloader .load :nth-child(3) {
+          animation-delay: -0.5s;
+          background: #b19994;
+      }
+      #preloader .load :last-child {
+          background: #937666;
+      }
     </style>
   </head>
 
 <body>
 <!-- Loading Page -->
-<div id="loader-wrapper">
-  <div id="loader"><div class="loader-inner"></div></div>
+<div id="preloader">
+  <div class="load">
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+  </div>
 </div>
 
 <!-- Navbar (sit on top) -->
