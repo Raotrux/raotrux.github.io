@@ -198,6 +198,36 @@
             transform: translateY(160%);
         }
       }
+
+      /* ------------------------- Responsive Web Design stuff ------------------------------- */
+      .example {
+        padding: 20px;
+        color: white;
+      }
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        .example {background: red;}
+      }
+
+      /* Small devices (portrait tablets and large phones, 600px and up) */
+      @media only screen and (min-width: 600px) {
+        .example {background: green;}
+      }
+
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px) {
+        .example {background: blue;}
+      } 
+
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media only screen and (min-width: 992px) {
+        .example {background: orange;}
+      } 
+
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media only screen and (min-width: 1200px) {
+        .example {background: pink;}
+      }
     </style>
   </head>
 
@@ -242,7 +272,7 @@
 <header class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-right w3-text-white" style="padding:48px">
     <span class="w3-jumbo w3-hide-small">Andrew Boyer</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Andrew Boyer</span>
+    <span class="w3-xlarge w3-hide-large w3-hide-medium">Andrew Boyer</span>
   </div>
   <div class="w3-display-bottomright w3-text-grey w3-large" style="padding:24px 48px">
     <a href="https://www.instagram.com/raotrux/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
@@ -308,6 +338,7 @@
 
 <!-- Second Parallax Image -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
+  <p class="example">Resize the browser window to see how the background color of this paragraph changes on different screen sizes.</p>
 </div>
 
 <!-- Education Section -->
